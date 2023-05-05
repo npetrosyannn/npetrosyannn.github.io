@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Cartoons">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="author" content="Nver Petrosyan">
+        <link rel="stylesheet" href="style.css"/>
+        <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+                <a href="./index.html" class="a_1">Cartoons</a>
+            <ul class="navbar">
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./about-us.html">About</a></li>
+                <li><a href="./team.html">Team</a></li>
+                <li><a href="./contact-us.html">Contact</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./about-us.html">About</a></li>
+                <li><a href="./team.html">Team</a></li>
+                <li><a href="./contact-us.html">Contact</a></li>
+            </div>
+        </header>
+        <main>
+            <div class="parent">
+                <div class="img1">
+                    <div class="par">
+                        <p class="p_1">
+                            <p>Տեսակ`	մեդիաֆրանշիզ, հեռուստասերիալ  </p>
+                            <p> և animated short film series?,</p>
+                            <p>Ժանր`	կատակերգություն,</p>
+                            <p>Հորինված երկիր`	Tom & Jerry universe?,</p>
+                            <p>Երաժշտություն`	Սքոթ Բրեդլի,</p>
+                            <p>Երկիր`	ԱՄՆ,</p>
+                            <p>Լեզու`	անգլերեն,</p>
+                            <p>Հեռուստաալիք`	Cartoon Network,</p>
+                            <p>Սերիաների քանակ`	164,</p>
+                            <p>Ռեժիսոր	Ուիլյամ` Հաննա և Ջոզեֆ Բարբերա,</p>
+                            <p>Ընկերություն`	Մետրո Գոլդվին Մայեր,</p>
+                            <a href="./tomjerry.html" target="_blank" title="Tom and Jerry">Ավելին...</a>
+                        </p>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/hy/9/9c/%D4%B9%D5%B8%D5%B4%D5%B6_%D5%B8%D6%82_%D5%8B%D5%A5%D6%80%D5%AB%D5%B6.jpg" alt="Tom and Jerry"/>
+                </div>
+                
+            </div>
+            <div class="border1"></div>
+        </main>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu= document.querySelector('.dropdown_menu')
+            toggleBtn.onclick = function (){
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                ?  'fa fa-xmark'
+                : 'fa fa-bars'
+            }
+        </script>
+    </body>
+</html>

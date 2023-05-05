@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Cartoons">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="author" content="Nver Petrosyan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="team.css"/>
+        <link rel="stylesheet" href="header.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="./index.html" class="a_1">Cartoons</a>
+            <ul class="navbar">
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./about-us.html">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="./contact-us.html">Contact</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./about-us.html">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="./contact-us.html">Contact</a></li>
+            </div>
+        </header>
+
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu= document.querySelector('.dropdown_menu')
+            toggleBtn.onclick = function (){
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                ?  'fa fa-xmark'
+                : 'fa fa-bars'
+            }
+        </script>
+    </body>
+</html>
